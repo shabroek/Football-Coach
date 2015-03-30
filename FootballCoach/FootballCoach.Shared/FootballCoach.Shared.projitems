@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>2cf5d456-5ec6-448e-9a61-7e55e9f06f39</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>FootballCoach</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Goal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\GoalType.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\IMatchEvent.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Match.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Player.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Position.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Substitution.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\SubstitutionReason.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Model\Team.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ApplicationState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FootballViewModelBase.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\IApplicationState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MainViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MatchViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PlayerViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelLocator.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Interfaces\" />
+  </ItemGroup>
+</Project>
