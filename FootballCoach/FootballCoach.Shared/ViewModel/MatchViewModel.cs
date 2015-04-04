@@ -22,9 +22,6 @@ namespace FootballCoach.ViewModel
             }
         }
 
-        
-
-
         public void AddMatchEvent(IMatchEvent matchEvent)
         {
             MatchEvents.Add(matchEvent);

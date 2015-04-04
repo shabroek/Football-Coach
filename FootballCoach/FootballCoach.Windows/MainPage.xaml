@@ -5,14 +5,44 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d" DataContext="{Binding Source={StaticResource Locator}}">
+    <Hub>
+        <Hub.Header>
+            <TextBlock x:Uid="Title" Text=""/>
+        </Hub.Header>
+        <HubSection>
+            <HubSection.Header>
+                <TextBlock x:Uid="Matches" Text=""/>
+            </HubSection.Header>
+            <DataTemplate>
+            </DataTemplate>
+        </HubSection>
+        <HubSection>
+            <HubSection.Header>
+                <TextBlock x:Uid="Players" Text=""/>
+            </HubSection.Header>
+            <DataTemplate>
+            </DataTemplate>
+        </HubSection>
+        <HubSection>
+            <HubSection.Header>
+                <TextBlock x:Uid="Goals" Text=""/>
+            </HubSection.Header>
+            <DataTemplate>
+            </DataTemplate>
+        </HubSection>
+        <HubSection>
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.RowDefinitions>
-            <RowDefinition />
-            <RowDefinition />
-        </Grid.RowDefinitions>
-        <Button Grid.Row="0" Content="Players" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
-        <Button Grid.Row="1" Content="Matches" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" />
-        <TextBlock Grid.Row="0" Text="{Binding Main.HelloWorld}" Grid.RowSpan="2" HorizontalAlignment="Center" Margin="0, 100"/>
-    </Grid>
+            <HubSection.Header>
+                <TextBlock x:Uid="Assists" Text=""/>
+            </HubSection.Header>
+            <DataTemplate>
+            </DataTemplate>
+        </HubSection>
+    </Hub>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton x:Uid="AddMatch" Icon="Add" Label=""/>
+            <AppBarButton x:Uid="Settings" Icon="Setting" Label=""/>
+        </CommandBar>
+    </Page.BottomAppBar>
 </Page>

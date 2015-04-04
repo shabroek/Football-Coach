@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>FootballCoach</RootNamespace>
     <AssemblyName>FootballCoach.WindowsPhone</AssemblyName>
-    <DefaultLanguage>nl-NL</DefaultLanguage>
+    <DefaultLanguage>en-US</DefaultLanguage>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>
     <MinimumVisualStudioVersion>12</MinimumVisualStudioVersion>
     <FileAlignment>512</FileAlignment>
@@ -80,15 +80,17 @@
     <Prefer32Bit>true</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="MatchEventPage.xaml.cs">
-      <DependentUpon>MatchEventPage.xaml</DependentUpon>
+    <Compile Include="Controls\MatchControl.xaml.cs">
+      <DependentUpon>MatchControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MatchPage.xaml.cs">
-      <DependentUpon>MatchPage.xaml</DependentUpon>
+    <Compile Include="Controls\PlayerControl.xaml.cs">
+      <DependentUpon>PlayerControl.xaml</DependentUpon>
     </Compile>
-    <Compile Include="PlayerPage.xaml.cs">
-      <DependentUpon>PlayerPage.xaml</DependentUpon>
+    <Compile Include="Controls\StatisticsControl.xaml.cs">
+      <DependentUpon>StatisticsControl.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Converters\HomeOrAwayConverter.cs" />
+    <Compile Include="Converters\StringFormatConverter.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -107,17 +109,18 @@
     <Content Include="Assets\Square71x71Logo.scale-240.png" />
     <Content Include="Assets\StoreLogo.scale-240.png" />
     <Content Include="Assets\WideLogo.scale-240.png" />
+    <Content Include="StoreManifest.xml" />
   </ItemGroup>
   <ItemGroup>
-    <Page Include="MatchEventPage.xaml">
+    <Page Include="Controls\MatchControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="MatchPage.xaml">
-      <SubType>Designer</SubType>
+    <Page Include="Controls\PlayerControl.xaml">
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
-    <Page Include="PlayerPage.xaml">
+    <Page Include="Controls\StatisticsControl.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -143,6 +146,7 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0' ">
     <VisualStudioVersion>12.0</VisualStudioVersion>
   </PropertyGroup>

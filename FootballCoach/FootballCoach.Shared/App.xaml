@@ -8,6 +8,16 @@
 
     <Application.Resources>
         <viewModel:ViewModelLocator x:Key="Locator" d:IsDataSource="True" />
+        
+        <Style x:Key="BaseStyle" TargetType="FrameworkElement">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+
+        <Style x:Key="BaseControlStyle" TargetType="Control" BasedOn="{StaticResource BaseTextBlockStyle}">
+            <Setter Property="Margin" Value="5"/>
+        </Style>
+
     </Application.Resources>
 
+    
 </Application>

@@ -4,7 +4,7 @@
   <mp:PhoneIdentity PhoneProductId="dd95ab99-8fd7-42c8-817b-2728c65d48f3" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
     <DisplayName>Football Coach.WindowsPhone</DisplayName>
-    <PublisherDisplayName>Sander</PublisherDisplayName>
+    <PublisherDisplayName>Sander van Broekhoven</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -16,13 +16,13 @@
   </Resources>
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="FootballCoach.WindowsPhone.App">
-      <m3:VisualElements DisplayName="Voetbal Statistieken" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="Met deze app kan je een team met spelers en wedstrijden aanmaken en voor deze wedstrijden allerlei statistieken bijhouden. Dit kan erg simpel, van doelpuntenmakers, tot erg ingewikkeld, tot aantal speelminuten, wisselbeurten, assists e.d." ForegroundText="light" BackgroundColor="transparent" ToastCapable="false">
+      <m3:VisualElements DisplayName="Voetbal Statistieken" Square150x150Logo="Assets\Logo.png" Square44x44Logo="Assets\SmallLogo.png" Description="Met deze app kan je een team met spelers en wedstrijden aanmaken en voor deze wedstrijden allerlei statistieken bijhouden. Dit kan erg simpel, van doelpuntenmakers, tot erg ingewikkeld, tot aantal speelminuten, wisselbeurten, assists e.d." ForegroundText="light" BackgroundColor="#567845" ToastCapable="false">
         <m3:DefaultTile Wide310x150Logo="Assets\WideLogo.png" Square71x71Logo="Assets\Square71x71Logo.png">
           <m3:ShowNameOnTiles>
             <m3:ShowOn Tile="wide310x150Logo" />
           </m3:ShowNameOnTiles>
         </m3:DefaultTile>
-        <m3:SplashScreen Image="Assets\SplashScreen.png" />
+        <m3:SplashScreen Image="Assets\SplashScreen.png" BackgroundColor="#567845" />
       </m3:VisualElements>
     </Application>
   </Applications>

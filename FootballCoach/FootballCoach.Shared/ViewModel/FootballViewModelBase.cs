@@ -6,11 +6,6 @@ namespace FootballCoach.ViewModel
     {
         private string _title;
 
-        public string ApplicationTitle
-        {
-            get { return "Voetbal"; }
-        }
-
         public string Title
         {
             get { return _title; }
