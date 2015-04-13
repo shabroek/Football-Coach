@@ -1,4 +1,5 @@
-﻿using GalaSoft.MvvmLight.Ioc;
+﻿using FootballCoach.Http;
+using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
 
 namespace FootballCoach.ViewModel
@@ -32,6 +33,7 @@ namespace FootballCoach.ViewModel
         static ViewModelLocator()
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
+            SimpleIoc.Default.Register<IFootballService, FootballService>();
             SimpleIoc.Default.Register<IApplicationState, ApplicationState>();
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<MatchViewModel>();

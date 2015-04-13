@@ -4,8 +4,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:command="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Platform"
     xmlns:footballCoach="using:FootballCoach"
     xmlns:converters="using:FootballCoach.Converters"
+    xmlns:controls="using:FootballCoach.Controls"
+    xmlns:interactivity="using:Microsoft.Xaml.Interactivity"
+    xmlns:core="using:Microsoft.Xaml.Interactions.Core"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
     DataContext="{Binding Source={StaticResource Locator}, Path=Main}">
@@ -13,12 +17,17 @@
         <converters:HomeOrAwayConverter x:Key="HomeOrAwayConverter"/>
         <converters:ShortDateStringConverter x:Key="ShortDateConverter"/>
         <converters:StringFormatConverter x:Key="StringFormatConverter"/>
-    </Page.Resources>
+    </Page.Resources> 
     <Hub>
         <Hub.Header>
             <TextBlock x:Uid="Title" Text=""/>
         </Hub.Header>
         <HubSection>
+            <interactivity:Interaction.Behaviors>
+                <core:EventTriggerBehavior EventName="Loaded">
+                    <core:InvokeCommandAction Command="{Binding LoadMatchesCommand}" />
+                </core:EventTriggerBehavior>
+            </interactivity:Interaction.Behaviors>
             <HubSection.Header>
                 <TextBlock x:Uid="Matches" Text=""/>
             </HubSection.Header>
@@ -49,6 +58,11 @@
             <HubSection.Header>
                 <TextBlock x:Uid="Players" Text=""/>
             </HubSection.Header>
+            <interactivity:Interaction.Behaviors>
+                <core:EventTriggerBehavior EventName="Loaded">
+                    <core:InvokeCommandAction Command="{Binding LoadPlayersCommand}" />
+                </core:EventTriggerBehavior>
+            </interactivity:Interaction.Behaviors>
             <DataTemplate>
                 <ListView ItemsSource="{Binding Path=Players}">
                     <ListView.ItemTemplate>
@@ -78,7 +92,7 @@
                 <TextBlock x:Uid="Goals" Text=""/>
             </HubSection.Header>
             <DataTemplate>
-                <footballCoach:StatisticsControl/>
+                <controls:StatisticsControl/>
             </DataTemplate>
         </HubSection>
         <HubSection>
@@ -87,7 +101,7 @@
                 <TextBlock x:Uid="Assists" Text=""/>
             </HubSection.Header>
             <DataTemplate>
-                <footballCoach:StatisticsControl/>
+                <controls:StatisticsControl/>
             </DataTemplate>
         </HubSection>
     </Hub>

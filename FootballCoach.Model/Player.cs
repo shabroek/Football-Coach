@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace FootballCoach.Model
 {
@@ -10,9 +9,10 @@ namespace FootballCoach.Model
             return String.Format("{0} {1}", FirstName, LastName);
         }
 
+        public int PlayerId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public DateTime DateOfBirth { get; set; }
-        public IEnumerable<Position> PreferredPosition { get; set; }
+        public Position PreferredPosition { get; set; }
     }
 }

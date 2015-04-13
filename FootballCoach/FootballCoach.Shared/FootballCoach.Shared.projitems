@@ -15,15 +15,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Goal.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\GoalType.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\IMatchEvent.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Match.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Player.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Position.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Substitution.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\SubstitutionReason.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Model\Team.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Http\FootballService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ApplicationState.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FootballViewModelBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\IApplicationState.cs" />

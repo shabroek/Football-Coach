@@ -8,6 +8,8 @@ namespace FootballCoach.Model
         DefensiveMidfielder,
         Winger,
         AttackingMidfielder,
-        Striker
+        Striker,
+        Midfielder,
+        Goalkeeper
     }
 }

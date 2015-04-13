@@ -1,4 +1,4 @@
-﻿namespace FootballCoach
+﻿namespace FootballCoach.Controls
 {
     public sealed partial class StatisticsControl
     {
