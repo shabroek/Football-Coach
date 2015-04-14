@@ -26,12 +26,14 @@ namespace FootballCoach.ViewModel
 
         private async Task LoadMatches()
         {
-            Matches = new ObservableCollection<Match>(await _footballService.GetAllMatches());
+            var matches = await _footballService.GetAllMatches();
+            Matches = new ObservableCollection<Match>(matches);
         }
 
         private async Task LoadPlayers()
         {
-            Players = new ObservableCollection<Player>(await _footballService.GetAllPlayers());
+            var players = await _footballService.GetAllPlayers();
+            Players = new ObservableCollection<Player>(players);
         }
 
         public ObservableCollection<Match> Matches

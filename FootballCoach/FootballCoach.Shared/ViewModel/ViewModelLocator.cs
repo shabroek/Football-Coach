@@ -33,7 +33,7 @@ namespace FootballCoach.ViewModel
         static ViewModelLocator()
         {
             ServiceLocator.SetLocatorProvider(() => SimpleIoc.Default);
-            SimpleIoc.Default.Register<IFootballService, FootballService>();
+            SimpleIoc.Default.Register<IFootballService, ODataFootballService>();
             SimpleIoc.Default.Register<IApplicationState, ApplicationState>();
             SimpleIoc.Default.Register<MainViewModel>();
             SimpleIoc.Default.Register<MatchViewModel>();

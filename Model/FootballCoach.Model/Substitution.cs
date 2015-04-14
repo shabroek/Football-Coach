@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace FootballCoach.WebAPI.Models
+﻿namespace FootballCoach.Model
 {
     public class Substitution : MatchEvent
     {

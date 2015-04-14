@@ -6,6 +6,7 @@ namespace FootballCoach.Model
     {
         public int TeamId { get; set; }
         public string Name { get; set; }
+        public int TeamNumber { get; set; }
 
         public ICollection<Player> Players { get; set; }
         public ICollection<Match> Matches { get; set; }

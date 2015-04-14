@@ -16,6 +16,9 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Http\FootballService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Http\IFootballService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Http\JsonNetFootballService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Http\ODataFootballService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ApplicationState.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FootballViewModelBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\IApplicationState.cs" />

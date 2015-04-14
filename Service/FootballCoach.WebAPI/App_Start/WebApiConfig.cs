@@ -2,7 +2,6 @@
 using System.Web.Http.OData.Builder;
 using System.Web.Http.OData.Extensions;
 using FootballCoach.Model;
-using FootballCoach.WebAPI.Models;
 
 namespace FootballCoach.WebAPI
 {

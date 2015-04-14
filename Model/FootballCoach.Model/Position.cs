@@ -2,14 +2,13 @@ namespace FootballCoach.Model
 {
     public enum Position
     {
-        Keeper,
+        Goalkeeper,
         FullBack,
         CentralDefender,
         DefensiveMidfielder,
         Winger,
         AttackingMidfielder,
         Striker,
-        Midfielder,
-        Goalkeeper
+        Midfielder
     }
 }
