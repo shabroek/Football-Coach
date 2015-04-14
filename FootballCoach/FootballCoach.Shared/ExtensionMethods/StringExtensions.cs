@@ -1,18 +1,16 @@
 ﻿using System;
-using System.Diagnostics.CodeAnalysis;
 using System.Globalization;
 using System.IO;
 using System.Linq;
 using System.Runtime.Serialization;
 
-namespace Isah.Core
+namespace FootballCoach.ExtensionMethods
 {
     public static class StringExtensions
     {
         /// <summary>
         /// test if string is null or empty string("")
         /// </summary>
-        [ExcludeFromCodeCoverage]
         public static bool IsNullOrEmpty(this string value)
         {
             return String.IsNullOrEmpty(value);
@@ -25,7 +23,6 @@ namespace Isah.Core
         /// <param name="format"></param>
         /// <param name="args"></param>
         /// <returns></returns>
-        [ExcludeFromCodeCoverage]
         public static string FormatUser(this string format, params object[] args)
         {
             return String.Format(CultureInfo.CurrentCulture, format, args);
@@ -38,7 +35,6 @@ namespace Isah.Core
         /// <param name="format"></param>
         /// <param name="args"></param>
         /// <returns></returns>
-        [ExcludeFromCodeCoverage] 
         public static string FormatInvariant(this string format, params object[] args)
         {
             return string.Format(CultureInfo.InvariantCulture, format, args);

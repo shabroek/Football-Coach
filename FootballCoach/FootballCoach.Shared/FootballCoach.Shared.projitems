@@ -15,6 +15,10 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ExtensionMethods\EnumerableExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExtensionMethods\EnumExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExtensionMethods\GenericExtensions.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ExtensionMethods\StringExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Http\FootballService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Http\IFootballService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Http\JsonNetFootballService.cs" />

@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Linq.Expressions;
 
-namespace Isah.Core
+namespace FootballCoach.ExtensionMethods
 {
     [DebuggerStepThrough]
-    [ExcludeFromCodeCoverage]
     public static class GenericExtensions
     {
         public static T ThrowIfNull<T>(this T value, Exception e)

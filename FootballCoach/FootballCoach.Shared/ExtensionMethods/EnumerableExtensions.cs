@@ -1,13 +1,11 @@
 ﻿using System;
 using System.Collections.Concurrent;
 using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace Isah.Core
+namespace FootballCoach.ExtensionMethods
 {
-    [ExcludeFromCodeCoverage]
     public static class EnumerableExtensions
     {
         public static Task ForEachAsync<T>(this IEnumerable<T> source, int dop, Func<T, Task> body)
