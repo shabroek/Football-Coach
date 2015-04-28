@@ -1,7 +1,7 @@
 ﻿using System.Collections.ObjectModel;
 using System.Threading.Tasks;
 using System.Windows.Input;
-using FootballCoach.Http;
+using FootballCoach.Interfaces;
 using FootballCoach.Model;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;

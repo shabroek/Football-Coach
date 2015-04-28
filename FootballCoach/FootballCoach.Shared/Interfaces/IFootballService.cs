@@ -1,16 +1,15 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using FootballCoach.Model;
 
-namespace FootballCoach.Http
+namespace FootballCoach.Interfaces
 {
     public interface IFootballService
     {
         Task<IEnumerable<Match>> GetAllMatches();
         Task<IEnumerable<Player>> GetAllPlayers();
-        Task<Player> Add(Player expense);
-        Task Delete(int id);
-        Task Update(Player expense);
-
+        Task<Player> AddPlayer(Player player);
+        Task DeletePlayer(int playerId);
+        Task UpdatePlayer(Player player);
     }
 }

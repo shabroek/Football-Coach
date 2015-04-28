@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
+using FootballCoach.Interfaces;
 using FootballCoach.Model;
 using Simple.OData.Client;
 
@@ -20,19 +21,19 @@ namespace FootballCoach.Http
             return await _client.For<Player>().FindEntriesAsync();
         }
 
-        public async Task<Player> Add(Player expense)
+        public async Task<Player> AddPlayer(Player player)
         {
-            return await _client.For<Player>().Set(expense).InsertEntryAsync();
+            return await _client.For<Player>().Set(player).InsertEntryAsync();
         }
 
-        public async Task Delete(int playerId)
+        public async Task DeletePlayer(int playerId)
         {
             await _client.For<Player>().Key(playerId).DeleteEntryAsync();
         }
 
-        public async Task Update(Player expense)
+        public async Task UpdatePlayer(Player player)
         {
-            await _client.For<Player>().Key(expense.PlayerId).Set(expense).UpdateEntryAsync();
+            await _client.For<Player>().Key(player.PlayerId).Set(player).UpdateEntryAsync();
         }
     }
 }

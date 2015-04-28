@@ -19,10 +19,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)ExtensionMethods\EnumExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ExtensionMethods\GenericExtensions.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ExtensionMethods\StringExtensions.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Http\FootballService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Http\IFootballService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Http\JsonNetFootballService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Http\ODataFootballService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\IFootballService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ApplicationState.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\FootballViewModelBase.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\IApplicationState.cs" />
@@ -30,9 +28,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\MatchViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\PlayerViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModel\ViewModelLocator.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Interfaces\" />
   </ItemGroup>
   <ItemGroup>
     <PRIResource Include="$(MSBuildThisFileDirectory)Strings\en-US\Resources.resw" />

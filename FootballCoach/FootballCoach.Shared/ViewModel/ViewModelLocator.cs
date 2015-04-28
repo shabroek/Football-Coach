@@ -1,4 +1,5 @@
 ﻿using FootballCoach.Http;
+using FootballCoach.Interfaces;
 using GalaSoft.MvvmLight.Ioc;
 using Microsoft.Practices.ServiceLocation;
 

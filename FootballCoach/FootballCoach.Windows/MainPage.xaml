@@ -41,7 +41,7 @@
     </Hub>
     <Page.BottomAppBar>
         <CommandBar>
-            <AppBarButton x:Uid="AddMatch" Icon="Add" Label=""/>
+            <AppBarButton x:Uid="AddPlayerMatch" Icon="AddPlayer" Label=""/>
             <AppBarButton x:Uid="Settings" Icon="Setting" Label=""/>
         </CommandBar>
     </Page.BottomAppBar>
